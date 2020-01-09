@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+ 	<!-- 迭代次数 -->
+    <iterationTime value="1000000"></iterationTime>
+    <!-- 画布大小 -->
+    <canvasSize width="800" high="800"></canvasSize>
+    <!--  -->
+    <xScale min="-5" max="5"></xScale>
+    <!--  -->
+    <yScale min="0" max="10"></yScale>
+    <!-- 点的大小 -->
+    <penRadius value="0.02"></penRadius>
+    <!-- 点的颜色 -->
+    <penColor r="255" g="0" b="0"></penColor>
+    <!-- 规则集合 -->
+    <rules>
+        <!-- 规则 -->
+        <rule src="https://introcs.cs.princeton.edu/java/22library/barnsley.txt" id="1">
+            <!-- 概率 总共有count个概率值 -->
+            <probabilities count="4">
+                <probability index="0">0.01</probability>
+                <probability index="1">0.85</probability>
+                <probability index="2">0.07</probability>
+                <probability index="3">0.07</probability>
+            </probabilities>
+            
+            <matrices>
+                <!-- 矩阵值 dimension维度为1代表描述的是x方向的 有概率值count个line 有3个column -->
+                <matrix dimension="1" column="3" line="4">
+                    <tr index="0">
+                        <td index="0">0.00</td>
+                        <td index="1">0.00</td>
+                        <td index="2">0.500</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">0.85</td>
+                        <td index="1">0.04</td>
+                        <td index="2">0.075</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.20</td>
+                        <td index="1">-0.26</td>
+                        <td index="2">0.400</td>
+                    </tr>
+                    <tr index="3">
+                        <td index="0">-0.15</td>
+                        <td index="1">0.28</td>
+                        <td index="2">0.575</td>
+                    </tr>
+                </matrix>
+                
+                 <!-- 矩阵值 dimension维度为2代表描述的是 y方向的 有概率值count个line 有3个column -->
+                <matrix dimension="2" column="3" line="4">
+                    <tr index="0">
+                        <td index="0">0.00</td>
+                        <td index="1">0.16</td>
+                        <td index="2">0.000</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">-0.04</td>
+                        <td index="1">0.85</td>
+                        <td index="2">0.180</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.23</td>
+                        <td index="1">0.22</td>
+                        <td index="2">0.045</td>
+                    </tr>
+                    <tr index="3">
+                        <td index="0">0.26</td>
+                        <td index="1">0.24</td>
+                        <td index="2">-0.086</td>
+                    </tr>
+                </matrix>
+            </matrices>
+        </rule>
+		<!-- ======================================================================================  -->
+        <rule src="https://introcs.cs.princeton.edu/java/22library/binary.txt" id="2">
+            <!-- 概率 总共有count个概率值 -->
+            <probabilities count="4">
+                <probability index="0">0.3333</probability>
+                <probability index="1">0.3333</probability>
+                <probability index="2">0.3334</probability>
+            </probabilities>
+            
+            <matrices>
+                <!-- 矩阵值 dimension维度为1代表描述的是x方向的 有概率值count个line 有3个column -->
+                <matrix dimension="1" column="3" line="3">
+                    <tr index="0">
+                        <td index="0">0.5</td>
+                        <td index="1">0.0</td>
+                        <td index="2">-0.0063477</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">0.5</td>
+                        <td index="1">0.0</td>
+                        <td index="2">0.4936544</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.00</td>
+                        <td index="1">-0.5</td>
+                        <td index="2">0.9873085</td>
+                    </tr>
+                </matrix>
+                
+                 <!-- 矩阵值 dimension维度为2代表描述的是 y方向的 有概率值count个line 有3个column -->
+                <matrix dimension="2" column="3" line="3">
+                    <tr index="0">
+                        <td index="0">0.0</td>
+                        <td index="1">0.5</td>
+                        <td index="2">-0.0000003</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">0.0</td>
+                        <td index="1">0.5</td>
+                        <td index="2">-0.0000003</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.5</td>
+                        <td index="1">0.0</td>
+                        <td index="2">0.5063492</td>
+                    </tr>
+                </matrix>
+            </matrices>
+        </rule>
+        <!-- ======================================================================================  -->
+        <rule src="https://introcs.cs.princeton.edu/java/22library/culcita.txt" id="3">
+            <!-- 概率 总共有count个概率值 -->
+            <probabilities count="4">
+                <probability index="0">0.02</probability>
+                <probability index="1">0.84</probability>
+                <probability index="2">0.07</probability>
+                <probability index="3">0.07</probability>
+            </probabilities>
+            
+            <matrices>
+                <!-- 矩阵值 dimension维度为1代表描述的是x方向的 有概率值count个line 有3个column -->
+                <matrix dimension="1" column="3" line="4">
+                    <tr index="0">
+                        <td index="0">0.00</td>
+                        <td index="1">0.00</td>
+                        <td index="2">0.500</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">0.85</td>
+                        <td index="1">0.02</td>
+                        <td index="2">0.075</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.09</td>
+                        <td index="1">-0.28</td>
+                        <td index="2">0.455</td>
+                    </tr>
+                    <tr index="3">
+                        <td index="0">-0.09</td>
+                        <td index="1">0.28</td>
+                        <td index="2">0.545</td>
+                    </tr>
+                </matrix>
+                
+                 <!-- 矩阵值 dimension维度为2代表描述的是 y方向的 有概率值count个line 有3个column -->
+                <matrix dimension="2" column="3" line="4">
+                    <tr index="0">
+                        <td index="0">0.00</td>
+                        <td index="1">0.25</td>
+                        <td index="2">-0.014</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">-0.02</td>
+                        <td index="1">0.83</td>
+                        <td index="2">0.11</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.3</td>
+                        <td index="1">0.11</td>
+                        <td index="2">-0.09</td>
+                    </tr>
+                    <tr index="3">
+                        <td index="0">0.3</td>
+                        <td index="1">0.09</td>
+                        <td index="2">-0.08</td>
+                    </tr>
+                </matrix>
+            </matrices>
+        </rule>
+		<!-- ======================================================================================  -->
+		<rule src="https://introcs.cs.princeton.edu/java/22library/cyclosorus.txt" id="4">
+            <!-- 概率 总共有count个概率值 -->
+            <probabilities count="4">
+                <probability index="0">0.02</probability>
+                <probability index="1">0.84</probability>
+                <probability index="2">0.07</probability>
+                <probability index="3">0.07</probability>
+            </probabilities>
+            
+            <matrices>
+                <!-- 矩阵值 dimension维度为1代表描述的是x方向的 有概率值count个line 有3个column -->
+                <matrix dimension="1" column="3" line="4">
+                    <tr index="0">
+                        <td index="0">0.00</td>
+                        <td index="1">0.00</td>
+                        <td index="2">0.500</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">0.95</td>
+                        <td index="1">0.005</td>
+                        <td index="2">0.025</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.035</td>
+                        <td index="1">-0.200</td>
+                        <td index="2">0.474</td>
+                    </tr>
+                    <tr index="3">
+                        <td index="0">-0.040</td>
+                        <td index="1">0.200</td>
+                        <td index="2">0.528</td>
+                    </tr>
+                </matrix>
+                
+                 <!-- 矩阵值 dimension维度为2代表描述的是 y方向的 有概率值count个line 有3个column -->
+                <matrix dimension="2" column="3" line="4">
+                    <tr index="0">
+                        <td index="0">0.0</td>
+                        <td index="1">0.250</td>
+                        <td index="2">-0.040</td>
+                    </tr>
+                    <tr index="1">
+                        <td index="0">-0.005</td>
+                        <td index="1">0.930</td>
+                        <td index="2">0.053</td>
+                    </tr>
+                    <tr index="2">
+                        <td index="0">0.160</td>
+                        <td index="1">0.040</td>
+                        <td index="2">-0.078</td>
+                    </tr>
+                    <tr index="3">
+                        <td index="0">0.160</td>
+                        <td index="1">0.040</td>
+                        <td index="2">-0.078</td>
+                    </tr>
+                </matrix>
+            </matrices>
+        </rule>
+		<!-- ======================================================================================  -->
+    </rules>
+</root>
